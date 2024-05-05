@@ -1,8 +1,10 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Landing1 from "../../assets/Landing2.jpg";
-import Landing2 from "../../assets/Landing.jpg";
+import Landing1 from "../../assets/L1.jpg";
+import Landing2 from "../../assets/L2.jpg";
+import Landing3 from "../../assets/L3.jpg";
+import Landing4 from "../../assets/L4.jpg";
 import {
   Box,
   Card,
@@ -17,15 +19,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/parallax";
 import "./Home.css";
-import ReasonOne from "../../assets/ReasonOne.jpg";
-import ReasonTwo from "../../assets/ReasonTwo.jpg";
-import ReasonThree from "../../assets/ReasonThree.jpg";
-import ReasonFour from "../../assets/ReasonFour.jpg";
+import ReasonOne from "../../assets/ReasonOne.png";
+import ReasonTwo from "../../assets/ReasonTwo.png";
+import ReasonThree from "../../assets/ReasonThree.png";
+import ReasonFour from "../../assets/ReasonFour.png";
+import threeLinePic from "../../assets/threeLinePic.png";
 import Check from "../../assets/check.png";
-import des1 from "../../assets/des1.png";
-import des2 from "../../assets/des2.png";
-import des3 from "../../assets/des3.png";
-import Ancient from "../../assets/ancient.png";
 
 const reasonsData = [
   {
@@ -58,16 +57,6 @@ const useStyles = makeStyles(() => ({
     width: "100%",
     height: "50%",
   },
-  // "@media (max-width: 768px)": {
-  //   swiperContainer: {
-  //     height: "480px" /* Adjust height for smaller screens */,
-  //   },
-  // },
-  // "@media (max-width: 576px)": {
-  //   swiperContainer: {
-  //     height: "380px" /* Adjust height for even smaller screens */,
-  //   },
-  // },
 }));
 
 function Home() {
@@ -143,19 +132,26 @@ function Home() {
               delay: 2500,
               disableOnInteraction: false,
             }}
-            pagination={{
-              dynamicBullets: true,
-            }}
+            // pagination={{
+            //   dynamicBullets: true,
+            // }}
             modules={[Autoplay, Pagination]}
           >
             <SwiperSlide>
+              <text className="landingSliderText">helloe</text>
               <img src={Landing1} style={{ width: "100%" }} />
             </SwiperSlide>
             <SwiperSlide>
+              <text className="landingSliderText">helloe</text>
               <img src={Landing2} style={{ width: "100%" }} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={Landing1} style={{ width: "100%" }} />
+              <text className="landingSliderText">helloe</text>
+              <img src={Landing3} style={{ width: "100%" }} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <text className="landingSliderText">helloe</text>
+              <img src={Landing4} style={{ width: "100%" }} />
             </SwiperSlide>
           </Swiper>
         </Box>
@@ -347,11 +343,9 @@ function Home() {
                 <Typography
                   sx={{
                     fontFamily: "Poppins",
-                    // fontSize: "15.91px",
                     fontWeight: 400,
                     lineHeight: "23.87px",
                     textAlign: "left",
-                    // fontSize: ["0.6rem", "1.1vw"],
                     color: "#470060",
                     textAlign: "justify",
                     marginBottom: "1%",
@@ -396,59 +390,10 @@ function Home() {
                 display="flex"
                 justifyContent="center"
               >
-                <Box
-                  display="flex"
-                  flexDirection={["row"]}
-                  alignItems={["center", "center"]}
-                  justifyContent="center"
-                  position="relative"
-                  overflow="hidden" // Hide overflow to cut off upper and lower parts of the image
-                >
-                  {/* Left vertical line */}
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: "33.333%",
-                      height: "100%", // Adjusted to 100%
-                      borderLeft: "5px solid white",
-                    }}
+                <img
+                    src={threeLinePic}
+                    style={{ width: "100%", borderRadius: "10px 10px 0 0" }}
                   />
-                  {/* Right vertical line */}
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      right: "33.333%",
-                      height: "100%", // Adjusted to 100%
-                      borderRight: "5px solid white",
-                    }}
-                  />
-                  {/* White background for upper part */}
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      right: 0,
-                      height: "50%", // Adjust the height as needed
-                      background: "white",
-                    }}
-                  />
-                  {/* White background for lower part */}
-                  <div
-                    style={{
-                      position: "absolute",
-                      bottom: 0,
-                      left: 0,
-                      right: 0,
-                      height: "10%", // Adjust the height as needed
-                      background: "white",
-                    }}
-                  />
-                  {/* Image */}
-                  <img src={Ancient} width="100%" height="100%" />
-                </Box>
               </Box>
             </Grid>
             <Grid item xs={12} sm={4}>
