@@ -1,33 +1,32 @@
-import React from 'react';
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import Header from './Components/Screens/Header/Header';
-import Landing from './Components/Screens/Landing/Landing';
-import Events from './Components/Screens/Events/Events';
-import FirstSaperator from './Components/Screens/FirstSaperator/FirstSaperator';
-import SecondSaperator from './Components/Screens/SecondSaperator/SecondSaperator';
-import Reasons from './Components/Screens/Reasons/Reasons';
-import Description from './Components/Screens/Description/Description';
-import Features from './Components/Screens/Features/Features';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Header from "./components/layout/header/Header";
+import Footer from "./components/layout/footer/Footer";
+import Home from "./components/home/Home";
+import AboutUs from "./components/aboutus/AboutUs";
+import Courses from "./components/courses/Courses";
+import Events from "./components/events/Events";
+import InquireNow from "./components/inquire-now/InquireNow";
+import Services from "./components/services/Services";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Landing />
-      <FirstSaperator />
-      <Events />
-      <SecondSaperator />
-      <Reasons />
-      <Description />
-      <Features />
-      {/* <Routes>
-        <Route path="/" element={<Landing />} />
-      </Routes>
-      <Routes>
-        <Route path="/events" element={<Events />} />
-      </Routes> */}
-    </div>
+    <>
+      <Router>
+        <div className="App">
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/inquire-now" element={<InquireNow />} />
+            <Route path="/Services" element={<Services />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </>
   );
 }
 

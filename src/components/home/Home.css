@@ -1,0 +1,41 @@
+.event-card {
+  margin: 3%;
+}
+
+.event-date {
+  font-size: 17.326px;
+  font-weight: bold;
+  color: #470060;
+}
+
+.event-description {
+  font-size: 11.949px;
+  font-weight: bold;
+  color: #888;
+}
+
+.event-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

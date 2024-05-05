@@ -1,0 +1,42 @@
+.toolbar {
+  height: 100px;
+  color: black;
+  background-color: aliceblue;
+  box-shadow: none !important;
+  text-transform: none !important;
+
+}
+
+.menu-icon {
+  margin-right: 10px;
+}
+
+.logo-container {
+  flex-grow: 1;
+}
+
+.logo {
+  height: 100px;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+
+.nav-buttons button {
+  text-transform: none !important;
+}
+
+.drawer-content {
+  text-align: center;
+}
+
+.drawer-heading {
+  margin: 20px 0;
+}
+
+.drawer-item {
+  text-align: center;
+}
