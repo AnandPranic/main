@@ -5,6 +5,7 @@ import Landing1 from "../../assets/L1.jpg";
 import Landing2 from "../../assets/L2.jpg";
 import Landing3 from "../../assets/L3.jpg";
 import Landing4 from "../../assets/L4.jpg";
+import Provides from "../../assets/Provides.jpg";
 import {
   Box,
   Card,
@@ -101,6 +102,26 @@ function Home() {
     // fontWeight: 600,
   };
 
+  const landingSliderText = {
+    fontFamily: "Poppins",
+    fontSize: ["0.7rem", "2.2vw"],
+    fontWeight: "500",
+    position: "absolute",
+    top: "43%",
+    right: "8%",
+    color: "white",
+  };
+
+  const landingSliderSubText = {
+    fontFamily: "Poppins",
+    fontSize: ["0.7rem", "3vw"],
+    fontWeight: "600",
+    position: "absolute",
+    top: "50%",
+    right: "8%",
+    color: "white",
+  };
+
   const infoTextStyles = {
     // fontSize: ["0.6rem", "1.1vw"],
     // color: "#470060",
@@ -128,30 +149,58 @@ function Home() {
         <Box sx={{ borderRadius: "10px" }}>
           <Swiper
             className={classes.swiperContainer}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
+            // autoplay={{
+            //   delay: 2500,
+            //   disableOnInteraction: false,
+            // }}
             // pagination={{
             //   dynamicBullets: true,
             // }}
             modules={[Autoplay, Pagination]}
           >
             <SwiperSlide>
-              <text className="landingSliderText">helloe</text>
-              <img src={Landing1} style={{ width: "100%" }} />
+              <Typography sx={landingSliderText}>WELCOME TO</Typography>
+              <Typography sx={landingSliderSubText}>
+                THE WORLD OF ENERGY
+              </Typography>
+              <img
+                src={Landing1}
+                alt="World of energy"
+                style={{ width: "100%" }}
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <text className="landingSliderText">helloe</text>
-              <img src={Landing2} style={{ width: "100%" }} />
+              <Typography sx={landingSliderText}>WELCOME TO</Typography>
+              <Typography sx={landingSliderSubText}>
+                THE WORLD OF ENERGY
+              </Typography>
+              <img
+                src={Landing2}
+                alt="World of energy"
+                style={{ width: "100%" }}
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <text className="landingSliderText">helloe</text>
-              <img src={Landing3} style={{ width: "100%" }} />
+              <Typography sx={landingSliderText}>WELCOME TO</Typography>
+              <Typography sx={landingSliderSubText}>
+                THE WORLD OF ENERGY
+              </Typography>
+              <img
+                src={Landing3}
+                alt="World of energy"
+                style={{ width: "100%" }}
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <text className="landingSliderText">helloe</text>
-              <img src={Landing4} style={{ width: "100%" }} />
+              <Typography sx={landingSliderText}>WELCOME TO</Typography>
+              <Typography sx={landingSliderSubText}>
+                THE WORLD OF ENERGY
+              </Typography>
+              <img
+                src={Landing4}
+                alt="World of energy"
+                style={{ width: "100%" }}
+              />
             </SwiperSlide>
           </Swiper>
         </Box>
@@ -391,9 +440,9 @@ function Home() {
                 justifyContent="center"
               >
                 <img
-                    src={threeLinePic}
-                    style={{ width: "100%", borderRadius: "10px 10px 0 0" }}
-                  />
+                  src={threeLinePic}
+                  style={{ width: "100%", borderRadius: "10px 10px 0 0" }}
+                />
               </Box>
             </Grid>
             <Grid item xs={12} sm={4}>
@@ -470,6 +519,9 @@ function Home() {
               <Typography align="center">Content for section 3</Typography> */}
             </Grid>
           </Grid>
+        </Box>
+        <Box flex={["2", "2", "2"]}>
+          <img src={Provides} alt="World of energy" style={{ width: "100%" }} />
         </Box>
       </div>
     </>

@@ -40,6 +40,19 @@
   align-items: center;
 }
 
-.landingSliderText{
-  position:absolute,
+.landingSliderText {
+  position: absolute;
+  color: white;
+  right: 8%;
+  top: 50%;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.landingSliderSubText{
+  position: absolute;
+  color: white;
+  right: 8%;
+  top: 43%;
+  font-family: 'Poppins';
 }
