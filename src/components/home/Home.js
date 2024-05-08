@@ -7,6 +7,14 @@ import Landing3 from "../../assets/L3.jpg";
 import Landing4 from "../../assets/L4.jpg";
 import Provides from "../../assets/Provides.jpg";
 import Group_40 from "../../assets/Group_40.jpg";
+import lotus from "../../assets/lotus.png";
+import teamwork from "../../assets/teamwork.png";
+import eventOne from "../../assets/eventOne.png";
+import eventTwo from "../../assets/eventTwo.png";
+import eventThree from "../../assets/eventThree.png";
+import eventFour from "../../assets/eventFour.png";
+import eventFive from "../../assets/eventFive.png";
+import eventSix from "../../assets/eventSix.png";
 import {
   Box,
   Card,
@@ -68,31 +76,37 @@ function Home() {
       date: new Date("2023-04-01"),
       name: "Event 1",
       description: "Description 1",
+      img: eventOne,
     },
     {
       date: new Date("2023-04-10"),
       name: "Event 2",
       description: "Description 2",
+      img: eventTwo,
     },
     {
       date: new Date("2023-04-15"),
       name: "Event 3",
       description: "Description 3",
+      img: eventThree,
     },
     {
       date: new Date("2023-04-20"),
       name: "Event 4",
       description: "Description 4",
+      img: eventFour,
     },
     {
       date: new Date("2023-04-25"),
       name: "Event 5",
       description: "Description 5",
+      img: eventFive,
     },
     {
       date: new Date("2023-04-30"),
       name: "Event 6",
       description: "Description 6",
+      img: eventSix,
     },
   ];
 
@@ -259,12 +273,20 @@ function Home() {
                   <CardMedia
                     component="img"
                     height="200"
-                    image="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                    image={event.img}
                     alt="Event Image"
                   />
                   <CardContent>
                     <Box sx={{ display: "flex", alignItems: "center" }}>
-                      <div className="date">
+                      <div
+                        className="date"
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          flexDirection: "column",
+                        }}
+                      >
                         <Typography variant="h6" className="event-date">
                           APR
                         </Typography>
@@ -520,37 +542,120 @@ function Home() {
             height: "50vh !important",
             color: "white",
             background: "#470060",
-            padding: "1% 15%",
+            padding: "1% 10%",
+            marginTop: "2%",
           }}
         >
           <Box sx={{ display: "flex" }}>
-            <Box sx={{ width: "35%" }}>
+            <Box
+              sx={{
+                width: "33.33%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <Typography
                 sx={{
                   fontFamily: "Poppins",
-                  fontSize: "20px",
+                  fontSize: ["0.8rem", "1.5vw"],
                   fontWeight: "400",
-                  lineHeight: "45px",
-                  letterSpacing: "0.5px",
-                  textAlign: "left",
-                }}
-              >
-                _Connect With Nature _
-              </Typography>
-              <Typography
-                sx={{
-                  fontFamily: "Poppins",
-                  fontSize: "28.77px ",
-                  fontWeight: "400",
-                  lineHeight: "43.15px",
                   letterSpacing: "0.7191489338874817px",
                   textAlign: "left",
                 }}
               >
-                The natural way to get your mind & body together
+                The organic approach to mind-body harmony
               </Typography>
             </Box>
-            <Box className="col-md-8">sdb iiahd asd</Box>
+            <Box
+              className="col-md-8"
+              sx={{
+                width: "33.33%",
+                justifyContent: "center",
+                alignItems: "center",
+                padding: "1%",
+              }}
+            >
+              <Box
+                sx={{
+                  backgroundColor: "rgba(255, 255, 255, 0.2)",
+                  justifyContent: "space-evenly",
+                  display: "flex",
+                  alignItems: "center",
+                  flexDirection: "row",
+                }}
+              >
+                <img src={lotus} style={{ width: "20%", height: "20%" }} />
+                <Box>
+                  <Typography
+                    sx={{
+                      fontFamily: "Poppins",
+                      fontSize: ["1rem", "2vw"],
+                      fontWeight: "400",
+                      textAlign: "center",
+                    }}
+                  >
+                    10050 +
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontFamily: "Poppins",
+                      fontSize: ["0.6rem", "1.1vw"],
+                      fontWeight: "400",
+                      letterSpacing: "0.5px",
+                      textAlign: "center",
+                    }}
+                  >
+                    Healing Sessions
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+            <Box
+              className="col-md-8"
+              sx={{
+                width: "33.33%",
+                justifyContent: "center",
+                alignItems: "center",
+                padding: "1%",
+              }}
+            >
+              <Box
+                sx={{
+                  backgroundColor: "rgba(255, 255, 255, 0.2)",
+                  justifyContent: "space-evenly",
+                  display: "flex",
+                  alignItems: "center",
+                  flexDirection: "row",
+                }}
+              >
+                <img src={teamwork} style={{ width: "20%", height: "20%" }} />
+                <Box>
+                  <Typography
+                    sx={{
+                      fontFamily: "Poppins",
+                      fontSize: ["1rem", "2vw"],
+                      fontWeight: "400",
+                      letterSpacing: "0.5px",
+                      textAlign: "center",
+                    }}
+                  >
+                    40 +
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontFamily: "Poppins",
+                      fontSize: ["0.6rem", "1.1vw"],
+                      fontWeight: "400",
+                      letterSpacing: "0.5px",
+                      textAlign: "center",
+                    }}
+                  >
+                    Workshops
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
           </Box>
           <Box
             sx={{
@@ -560,7 +665,10 @@ function Home() {
             }}
             flex={["2", "2", "2"]}
           >
-            <img src={Group_40} style={{ width: "100%", height: "460px" }} />
+            <img
+              src={Group_40}
+              style={{ width: "100%", height: "460px", marginTop: "3%" }}
+            />
           </Box>
         </Box>
       </div>
