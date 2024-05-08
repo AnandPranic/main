@@ -6,6 +6,7 @@ import Landing2 from "../../assets/L2.jpg";
 import Landing3 from "../../assets/L3.jpg";
 import Landing4 from "../../assets/L4.jpg";
 import Provides from "../../assets/Provides.jpg";
+import Group_40 from "../../assets/Group_40.jpg";
 import {
   Box,
   Card,
@@ -449,20 +450,14 @@ function Home() {
               <Box
                 sx={{
                   marginTop: "25%",
-                  // display:"flex",
-                  // justifyContent:"center",
-                  // alignItems:"center",
-                  // textAlign:"center"
                 }}
               >
                 <Typography
                   sx={{
                     fontFamily: "Poppins",
-                    // fontSize: "15.91px",
                     fontWeight: 400,
                     lineHeight: "23.87px",
                     textAlign: "left",
-                    // fontSize: ["0.6rem", "1.1vw"],
                     color: "#470060",
                     textAlign: "justify",
                     marginBottom: "1%",
@@ -476,11 +471,9 @@ function Home() {
                 <Typography
                   sx={{
                     fontFamily: "Poppins",
-                    // fontSize: "15.91px",
                     fontWeight: 400,
                     lineHeight: "23.87px",
                     textAlign: "left",
-                    // fontSize: ["0.6rem", "1.1vw"],
                     color: "#470060",
                     textAlign: "justify",
                     marginBottom: "1%",
@@ -513,15 +506,62 @@ function Home() {
                   Pranic Healing now titled Miracles through Pranic Healing."
                 </Typography>
               </Box>
-              {/* <Typography variant="h6" align="center">
-                Section 3
-              </Typography>
-              <Typography align="center">Content for section 3</Typography> */}
             </Grid>
           </Grid>
         </Box>
         <Box flex={["2", "2", "2"]}>
           <img src={Provides} alt="World of energy" style={{ width: "100%" }} />
+        </Box>
+        <Box
+          sx={{
+            // display: "flex",
+            // justifyContent: "center",
+            width: "100% !imporatnt",
+            height: "50vh !important",
+            color: "white",
+            background: "#470060",
+            padding: "1% 15%",
+          }}
+        >
+          <Box sx={{ display: "flex" }}>
+            <Box sx={{ width: "35%" }}>
+              <Typography
+                sx={{
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  fontWeight: "400",
+                  lineHeight: "45px",
+                  letterSpacing: "0.5px",
+                  textAlign: "left",
+                }}
+              >
+                _Connect With Nature _
+              </Typography>
+              <Typography
+                sx={{
+                  fontFamily: "Poppins",
+                  fontSize: "28.77px ",
+                  fontWeight: "400",
+                  lineHeight: "43.15px",
+                  letterSpacing: "0.7191489338874817px",
+                  textAlign: "left",
+                }}
+              >
+                The natural way to get your mind & body together
+              </Typography>
+            </Box>
+            <Box className="col-md-8">sdb iiahd asd</Box>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignContent: "center",
+            }}
+            flex={["2", "2", "2"]}
+          >
+            <img src={Group_40} style={{ width: "100%", height: "460px" }} />
+          </Box>
         </Box>
       </div>
     </>
