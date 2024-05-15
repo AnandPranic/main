@@ -15,6 +15,7 @@ import eventThree from "../../assets/eventThree.png";
 import eventFour from "../../assets/eventFour.png";
 import eventFive from "../../assets/eventFive.png";
 import eventSix from "../../assets/eventSix.png";
+import Yoga from "../../assets/Yoga.jpg";
 import {
   Box,
   Card,
@@ -23,7 +24,7 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import { Autoplay, Pagination, Navigation, Parallax } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -110,12 +111,12 @@ function Home() {
     },
   ];
 
-  const textStyles = {
-    // fontSize: ["1.2rem", "2.4vw"],
-    // color: "#470060",
-    // lineHeight: [1, 10],
-    // fontWeight: 600,
-  };
+  // const textStyles = {
+  // fontSize: ["1.2rem", "2.4vw"],
+  // color: "#470060",
+  // lineHeight: [1, 10],
+  // fontWeight: 600,
+  // };
 
   const landingSliderText = {
     fontFamily: "Poppins",
@@ -137,18 +138,18 @@ function Home() {
     color: "white",
   };
 
-  const infoTextStyles = {
-    // fontSize: ["0.6rem", "1.1vw"],
-    // color: "#470060",
-    // fontWeight: 400,
-    // textAlign: "justify",
-  };
+  // const infoTextStyles = {
+  // fontSize: ["0.6rem", "1.1vw"],
+  // color: "#470060",
+  // fontWeight: 400,
+  // textAlign: "justify",
+  // };
 
-  const checkIconStyles = {
-    // width: ["12px", "12px"],
-    // height: ["12px", "12px"],
-    // marginRight: "3%",
-  };
+  // const checkIconStyles = {
+  // width: ["12px", "12px"],
+  // height: ["12px", "12px"],
+  // marginRight: "3%",
+  // };
 
   const info = [
     "Pranic Healing was founded by a Scientist and Philanthropist, Grand Master Choa Kok Sui. It is a modern no-touch and no-drug therapy that works on the auras and chakras of an individual to heal them of their physical, emotional and mental health.",
@@ -534,141 +535,268 @@ function Home() {
         <Box flex={["2", "2", "2"]}>
           <img src={Provides} alt="World of energy" style={{ width: "100%" }} />
         </Box>
-        <Box
-          sx={{
-            // display: "flex",
-            // justifyContent: "center",
-            width: "100% !imporatnt",
-            height: "50vh !important",
-            color: "white",
-            background: "#470060",
-            padding: "1% 10%",
-            marginTop: "2%",
-          }}
-        >
-          <Box sx={{ display: "flex" }}>
+        <Box sx={{ height: "50%" }}>
+          <Box
+            sx={{
+              width: "100% !imporatnt",
+              height: "50vh !important",
+              color: "white",
+              background: "#470060",
+              padding: "1% 10%",
+              marginTop: "2%",
+              height: "calc(50vh - 20px)", // Set height to 50% of viewport height - 20px margin
+            }}
+          >
+            <Box sx={{ display: "flex" }}>
+              <Box
+                sx={{
+                  width: "33.33%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                {/* <Box>
+              <Typography>_Connect With Nature _</Typography>
+              </Box> */}
+                <Typography
+                  sx={{
+                    fontFamily: "Poppins",
+                    fontSize: ["0.8rem", "1.5vw"],
+                    fontWeight: "400",
+                    letterSpacing: "0.7191489338874817px",
+                    textAlign: "left",
+                  }}
+                >
+                  The organic approach to mind-body harmony
+                </Typography>
+              </Box>
+              <Box
+                className="col-md-8"
+                sx={{
+                  // width: "33.33%",
+                  width: { base: "100%", md: "33.33%" }, // Set width based on screen size
+                  justifyContent: "center",
+                  alignItems: "center",
+                  padding: "1%",
+                }}
+              >
+                <Box
+                  sx={{
+                    backgroundColor: "rgba(255, 255, 255, 0.2)",
+                    justifyContent: "space-evenly",
+                    display: "flex",
+                    alignItems: "center",
+                    flexDirection: "row",
+                  }}
+                >
+                  <img src={lotus} style={{ width: "20%", height: "20%" }} />
+                  <Box>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins",
+                        fontSize: ["1rem", "2vw"],
+                        fontWeight: "400",
+                        textAlign: "center",
+                      }}
+                    >
+                      10050 +
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins",
+                        fontSize: ["0.6rem", "1.1vw"],
+                        fontWeight: "400",
+                        letterSpacing: "0.5px",
+                        textAlign: "center",
+                      }}
+                    >
+                      Healing Sessions
+                    </Typography>
+                  </Box>
+                </Box>
+              </Box>
+              <Box
+                className="col-md-8"
+                sx={{
+                  width: { base: "100%", md: "33.33%" }, // Set width based on screen size
+                  justifyContent: "center",
+                  alignItems: "center",
+                  padding: "1%",
+                }}
+              >
+                <Box
+                  sx={{
+                    backgroundColor: "rgba(255, 255, 255, 0.2)",
+                    justifyContent: "space-evenly",
+                    display: "flex",
+                    alignItems: "center",
+                    flexDirection: "row",
+                  }}
+                >
+                  <img src={teamwork} style={{ width: "20%", height: "20%" }} />
+                  <Box>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins",
+                        fontSize: ["1rem", "2vw"],
+                        fontWeight: "400",
+                        letterSpacing: "0.5px",
+                        textAlign: "center",
+                      }}
+                    >
+                      40 +
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins",
+                        fontSize: ["0.6rem", "1.1vw"],
+                        fontWeight: "400",
+                        letterSpacing: "0.5px",
+                        textAlign: "center",
+                      }}
+                    >
+                      Workshops
+                    </Typography>
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
             <Box
               sx={{
-                width: "33.33%",
                 display: "flex",
                 justifyContent: "center",
-                alignItems: "center",
+                alignContent: "center",
               }}
+              // flex={["2", "2", "2"]}
             >
+              <img
+                src={Group_40}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  maxHeight: "100vh",
+                  marginTop: "3%",
+                }}
+              />
+              {/* <img src={Group_40} style={{ width: "100%", marginTop: "3%" }} /> */}
+            </Box>
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: { xs: "10%", sm: "20%", md: "30%", lg: "37%" },
+          }}
+        >
+          <Typography
+            sx={{
+              fontFamily: "Poppins",
+              fontSize: "32.63px",
+              fontWeight: 400,
+              lineHeight: "73.43px",
+              letterSpacing: "0.8158609867095947px",
+              textAlign: "left",
+              color: "#470060",
+            }}
+          >
+            _Experiences _
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Typography
+            sx={{
+              fontFamily: "Poppins",
+              fontSize: "49.39px",
+              fontWeight: 500,
+              // lineHeight: "111px",
+              // letterSpacing: "0.8158609867095947px",
+              // textAlign: "left",
+              color: "#470060",
+            }}
+          >
+            What our clients say about us
+          </Typography>
+        </Box>
+        <Box sx={{ padding: "0 15%", marginTop: "5%" }}>
+          {" "}
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6}>
+              {/* <Box sx={{ backgroundColor: "lightblue", height: "200px" }}> */}
               <Typography
                 sx={{
+                  color: "black",
                   fontFamily: "Poppins",
-                  fontSize: ["0.8rem", "1.5vw"],
-                  fontWeight: "400",
-                  letterSpacing: "0.7191489338874817px",
-                  textAlign: "left",
+                  fontSize: "20px",
+                  fontWeight: 500,
                 }}
               >
-                The organic approach to mind-body harmony
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
               </Typography>
-            </Box>
-            <Box
-              className="col-md-8"
-              sx={{
-                width: "33.33%",
-                justifyContent: "center",
-                alignItems: "center",
-                padding: "1%",
-              }}
-            >
-              <Box
+              {/* </Box> */}
+            </Grid>
+            <Grid item xs={12} md={6}>
+              {/* <Box sx={{ backgroundColor: "lightgreen", height: "200px" }}> */}
+              <Typography
                 sx={{
-                  backgroundColor: "rgba(255, 255, 255, 0.2)",
-                  justifyContent: "space-evenly",
-                  display: "flex",
-                  alignItems: "center",
-                  flexDirection: "row",
+                  color: "black",
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  fontWeight: 500,
                 }}
               >
-                <img src={lotus} style={{ width: "20%", height: "20%" }} />
-                <Box>
-                  <Typography
-                    sx={{
-                      fontFamily: "Poppins",
-                      fontSize: ["1rem", "2vw"],
-                      fontWeight: "400",
-                      textAlign: "center",
-                    }}
-                  >
-                    10050 +
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontFamily: "Poppins",
-                      fontSize: ["0.6rem", "1.1vw"],
-                      fontWeight: "400",
-                      letterSpacing: "0.5px",
-                      textAlign: "center",
-                    }}
-                  >
-                    Healing Sessions
-                  </Typography>
-                </Box>
-              </Box>
-            </Box>
-            <Box
-              className="col-md-8"
-              sx={{
-                width: "33.33%",
-                justifyContent: "center",
-                alignItems: "center",
-                padding: "1%",
-              }}
-            >
-              <Box
-                sx={{
-                  backgroundColor: "rgba(255, 255, 255, 0.2)",
-                  justifyContent: "space-evenly",
-                  display: "flex",
-                  alignItems: "center",
-                  flexDirection: "row",
-                }}
-              >
-                <img src={teamwork} style={{ width: "20%", height: "20%" }} />
-                <Box>
-                  <Typography
-                    sx={{
-                      fontFamily: "Poppins",
-                      fontSize: ["1rem", "2vw"],
-                      fontWeight: "400",
-                      letterSpacing: "0.5px",
-                      textAlign: "center",
-                    }}
-                  >
-                    40 +
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontFamily: "Poppins",
-                      fontSize: ["0.6rem", "1.1vw"],
-                      fontWeight: "400",
-                      letterSpacing: "0.5px",
-                      textAlign: "center",
-                    }}
-                  >
-                    Workshops
-                  </Typography>
-                </Box>
-              </Box>
-            </Box>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s,
+              </Typography>
+              {/* </Box> */}
+            </Grid>
+          </Grid>
+        </Box>
+        <Box
+          sx={{ position: "relative", maxHeight: "60vh", overflow: "hidden" }}
+        >
+          <img src={Yoga} alt="Yoga" width="100%" style={{ height: "70%" }} />
+          <Box
+            sx={{
+              position: "absolute",
+              top: "0",
+              left: "0",
+              width: "100%",
+              height: "100%",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+            }}
+          />
+          <Box
+            sx={{
+              position: "absolute",
+              top: "50%",
+              right: "0",
+              transform: "translateY(-50%)",
+            }}
+          >
+            {/* <Button variant="contained" color="primary">Your Button</Button> */}
           </Box>
           <Box
             sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignContent: "center",
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
             }}
-            flex={["2", "2", "2"]}
           >
-            <img
-              src={Group_40}
-              style={{ width: "100%", height: "460px", marginTop: "3%" }}
-            />
+            <Typography variant="h6" align="center">
+              Healing Sessions | Learn Pranic Healing | Learn to Meditate
+            </Typography>
           </Box>
         </Box>
       </div>
