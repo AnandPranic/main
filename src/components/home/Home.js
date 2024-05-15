@@ -18,6 +18,7 @@ import eventSix from "../../assets/eventSix.png";
 import Yoga from "../../assets/Yoga.jpg";
 import {
   Box,
+  Button,
   Card,
   CardContent,
   CardMedia,
@@ -726,7 +727,7 @@ function Home() {
             What our clients say about us
           </Typography>
         </Box>
-        <Box sx={{ padding: "0 15%", marginTop: "5%" }}>
+        <Box sx={{ padding: "0 15%", marginTop: "4%", marginBottom: "3%" }}>
           {" "}
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
@@ -763,7 +764,11 @@ function Home() {
           </Grid>
         </Box>
         <Box
-          sx={{ position: "relative", maxHeight: "60vh", overflow: "hidden" }}
+          sx={{
+            position: "relative",
+            maxHeight: "60vh",
+            overflow: "hidden",
+          }}
         >
           <img src={Yoga} alt="Yoga" width="100%" style={{ height: "70%" }} />
           <Box
@@ -780,24 +785,26 @@ function Home() {
             sx={{
               position: "absolute",
               top: "50%",
-              right: "0",
-              transform: "translateY(-50%)",
-            }}
-          >
-            {/* <Button variant="contained" color="primary">Your Button</Button> */}
-          </Box>
-          <Box
-            sx={{
-              position: "absolute",
-              top: "50%",
               left: "50%",
               transform: "translate(-50%, -50%)",
             }}
           >
-            <Typography variant="h6" align="center">
+            <Typography variant="h5" align="center" color="white">
               Healing Sessions | Learn Pranic Healing | Learn to Meditate
             </Typography>
           </Box>
+          {/* <Box
+            sx={{
+              position: "absolute",
+              top: "50%",
+              right: "0",
+              transform: "translateY(-50%)",
+            }}
+          >
+            <Button variant="contained" color="success">
+              Your Button
+            </Button>
+          </Box> */}
         </Box>
       </div>
     </>
