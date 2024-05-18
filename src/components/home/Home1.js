@@ -18,6 +18,7 @@ import eventSix from "../../assets/eventSix.png";
 import Yoga from "../../assets/Yoga.jpg";
 import {
   Box,
+  Button,
   Card,
   CardContent,
   CardMedia,
